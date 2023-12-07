@@ -97,9 +97,7 @@ app.post("/login", (req, res) => {
   });
 });
 
-app.get("/Register", verifyUser, (req, res) => {
-  return res.json({ Status: "Success", name: req.name });
-});
+
 
 app.listen(3300, () => {
   console.log("Listening");
